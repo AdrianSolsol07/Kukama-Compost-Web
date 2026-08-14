@@ -78,7 +78,7 @@ const questions = [
     title: '¿Por qué deseas ser voluntario/a en Kukama Compost?',
     hint: 'No buscamos una respuesta perfecta. Queremos conocer tu motivación.',
     placeholder: 'Cuéntanos brevemente qué te mueve a participar...',
-    maxLength: 180,
+    maxLength: 500,
     required: true
   },
   {
@@ -148,7 +148,7 @@ function renderQuestion() {
   if (question.type === 'textarea') {
     content += `
       <textarea id="answer-input" class="wizard-input wizard-textarea" placeholder="${question.placeholder}" aria-labelledby="question-title" aria-describedby="question-hint writing-counter wizard-error">${escapeHtml(answers[question.id] || '')}</textarea>
-      <div class="writing-meter"><span></span><small id="writing-counter">0 / ${question.maxLength || 180} caracteres</small></div>
+      <div class="writing-meter"><span></span><small id="writing-counter">0/${question.maxLength || 500} caracteres</small></div>
     `;
   }
 
@@ -227,11 +227,11 @@ function updateWritingMeter() {
   if (!meter || !input) return;
 
   const question = questions[currentQuestion];
-  const limit = question.maxLength || 180;
+  const limit = question.maxLength || 500;
   const currentLength = input.value.length;
   const percent = Math.min(100, Math.round((currentLength / limit) * 100));
   meter.style.width = `${percent}%`;
-  if (counter) counter.textContent = `${currentLength} / ${limit} caracteres`;
+  if (counter) counter.textContent = `${currentLength}/${limit} caracteres`;
   document.querySelector('.writing-meter')?.classList.toggle('is-full', currentLength >= limit);
 }
 
