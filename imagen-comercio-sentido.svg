@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Comercio con sentido</title>
+  <desc id="desc">Ilustracion de artesanias kukama, manos y productos comunitarios en una feria sostenible.</desc>
+  <rect width="900" height="520" fill="#fff8ea"/>
+  <path d="M0 84h900v150H0z" fill="#dfe9bb"/>
+  <path d="M0 144h900v42H0z" fill="#b8d875"/>
+  <g stroke="#245d43" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M84 112l50 46 50-46 50 46 50-46 50 46"/>
+    <path d="M563 112l50 46 50-46 50 46 50-46 50 46"/>
+  </g>
+  <rect x="122" y="218" width="656" height="233" rx="24" fill="#245d43"/>
+  <path d="M122 284h656v167H122z" fill="#17392c"/>
+  <g transform="translate(183 248)">
+    <ellipse cx="95" cy="119" rx="75" ry="88" fill="#d86d44"/>
+    <path d="M39 110c34 25 74 25 113 0M43 143c35-18 73-17 106 0" fill="none" stroke="#fff8ea" stroke-width="8" stroke-linecap="round"/>
+    <path d="M95 32v173" stroke="#fff8ea" stroke-width="7" stroke-linecap="round"/>
+    <path d="M66 72l29 28 30-28 29 28M58 181l37-32 37 32" fill="none" stroke="#17392c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(394 254)">
+    <path d="M55 158h154l-20 61H75z" fill="#8e5a32"/>
+    <path d="M38 132h188v35H38z" fill="#f2b65f"/>
+    <path d="M102 132c-18-47 3-84 55-107 10 58-11 93-55 107z" fill="#b8d875"/>
+    <path d="M108 151h49M80 185h103" stroke="#fff8ea" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(599 256)">
+    <path d="M31 122c16-54 106-55 124 0v99H31z" fill="#f4eedf"/>
+    <path d="M55 145h76M55 179h76" stroke="#d86d44" stroke-width="10" stroke-linecap="round"/>
+    <path d="M61 93c10-33 58-34 68 0" fill="none" stroke="#245d43" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <path d="M102 458c86-44 168-44 245 0M552 458c83-44 167-44 246 0" fill="none" stroke="#d86d44" stroke-width="15" stroke-linecap="round"/>
+</svg>

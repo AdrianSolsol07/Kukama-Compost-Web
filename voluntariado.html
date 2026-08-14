@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voluntariado | Kukama Compost</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="voluntariado.css" />
+    <link rel="stylesheet" href="voluntariado-wizard.css" />
+  </head>
+  <body>
+    <header class="site-header volunteer-header">
+      <a class="brand" href="index.html" aria-label="Volver a Kukama Compost">
+        <span class="brand-mark">K</span><span>Kukama <b>Compost</b></span>
+      </a>
+      <a class="back-link" href="index.html">← Volver al inicio</a>
+    </header>
+
+    <main class="volunteer-app">
+      <span class="volunteer-blob blob-one"></span>
+      <span class="volunteer-blob blob-two"></span>
+      <span class="floating-leaf leaf-one">🌿</span>
+      <span class="floating-leaf leaf-two">🍃</span>
+
+      <section class="wizard-screen active" id="welcome-screen">
+        <div class="wizard-welcome">
+          <div class="welcome-copy">
+            <p class="eyebrow">Voluntariado Kukama</p>
+            <h1>Haz que tus ideas <span>echen raíces.</span></h1>
+            <p>Queremos conocerte y encontrar contigo la mejor forma de aportar a una Amazonía más sostenible, comunitaria y viva.</p>
+            <button class="wizard-start" type="button" id="start-wizard">Quiero ser voluntario/a <span>→</span></button>
+          </div>
+          <div class="welcome-art" aria-hidden="true">
+            <span class="art-sun"></span>
+            <span class="art-plant">🌱</span>
+            <p>Una comunidad crece cuando cada persona aporta algo diferente.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wizard-screen" id="form-screen">
+        <div class="wizard-shell">
+          <div class="wizard-topbar">
+            <div class="mini-brand">
+              <img src="kc-logo.webp" alt="Kukama Compost" width="900" height="277" decoding="async" />
+            </div>
+            <div class="wizard-status"><span class="wizard-counter" id="wizard-counter">01 / 08</span><span class="wizard-percent" id="wizard-percent">13%</span></div>
+          </div>
+
+          <div class="wizard-progress" role="progressbar" aria-label="Progreso del formulario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="13"><span id="wizard-progress-bar"></span></div>
+          <div id="question-container" aria-live="polite"></div>
+
+          <div class="wizard-navigation">
+            <button class="wizard-back" type="button" id="previous-question">← Volver</button>
+            <button class="wizard-next" type="button" id="next-question">Continuar <span>→</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wizard-screen" id="finish-screen">
+        <div class="wizard-finish">
+          <img class="finish-logo" src="kc-login-logo.webp" alt="Kukama Compost" width="700" height="700" decoding="async" />
+          <h2>¡Gracias por querer ser parte de nosotros!</h2>
+          <p>Tu carta fue preparada en este dispositivo. Todavía no se ha enviado a Kukama Compost; puedes revisarla y descargarla para conservarla.</p>
+          <div class="answer-summary" id="answer-summary"></div>
+          <button class="view-letter-pill" type="button" id="view-letter">Revisar y descargar carta <span>↓</span></button>
+          <button class="wizard-start" type="button" id="exit-wizard">Salir <span>→</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="index.html"><span class="brand-mark">K</span><span>Kukama <b>Compost</b></span></a><p>© <span id="year"></span> Kukama Compost</p></footer>
+    <script src="membrete-embebido.js"></script><script src="voluntariado.js?v=20260814"></script><script src="footer-global.js?v=20260814"></script>
+  </body>
+</html>

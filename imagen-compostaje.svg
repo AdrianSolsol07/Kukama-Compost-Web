@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Compostaje comunitario</title>
+  <desc id="desc">Ilustracion de residuos organicos transformandose en compost con una planta creciendo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eaf4c9"/>
+      <stop offset="1" stop-color="#f8efe0"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8e5a32"/>
+      <stop offset="1" stop-color="#4d301f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" fill="url(#sky)"/>
+  <circle cx="744" cy="98" r="56" fill="#f2b65f" opacity=".9"/>
+  <path d="M0 370c142-66 269-66 412 0s302 66 488-13v163H0z" fill="#245d43"/>
+  <path d="M0 404c172-68 329-47 464-2 124 41 258 46 436-24v142H0z" fill="#17392c"/>
+  <g transform="translate(178 169)">
+    <path d="M49 85c52 4 94 33 110 78-53-1-101-28-110-78z" fill="#b8d875"/>
+    <path d="M167 116c-6-57 20-111 70-142 12 69-16 121-70 142z" fill="#5a956b"/>
+    <path d="M145 202c2-71 13-130 64-185" fill="none" stroke="#245d43" stroke-width="14" stroke-linecap="round"/>
+    <path d="M143 201c-19-45-47-80-89-112" fill="none" stroke="#245d43" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(438 164)">
+    <path d="M35 170h280l-23 92H58z" fill="url(#soil)"/>
+    <path d="M19 143h311c14 0 25 11 25 25v22H0v-28c0-11 8-19 19-19z" fill="#d86d44"/>
+    <path d="M46 143c18-50 70-72 119-52 18-55 96-64 133-18 20 25 20 52 13 70z" fill="#6f482f"/>
+    <circle cx="97" cy="114" r="11" fill="#f4eedf"/>
+    <circle cx="142" cy="96" r="9" fill="#b8d875"/>
+    <circle cx="231" cy="98" r="12" fill="#f4eedf"/>
+    <path d="M203 29c42 7 74 37 82 78-43-3-78-34-82-78z" fill="#b8d875"/>
+    <path d="M187 107c5-54 26-95 68-124" fill="none" stroke="#245d43" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <g fill="#d86d44" opacity=".9">
+    <path d="M125 322c31-23 61-15 78 14-34 16-59 12-78-14z"/>
+    <path d="M718 328c26-27 58-24 80 1-29 22-55 23-80-1z"/>
+  </g>
+</svg>
