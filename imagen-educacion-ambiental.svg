@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Educacion ambiental</title>
+  <desc id="desc">Ilustracion de un taller con una pizarra, hojas, estudiantes y materiales de compostaje.</desc>
+  <rect width="900" height="520" fill="#f4eedf"/>
+  <path d="M0 382c172-61 323-55 449-6 141 55 274 54 451-16v160H0z" fill="#dfe9bb"/>
+  <rect x="196" y="71" width="508" height="270" rx="18" fill="#17392c"/>
+  <rect x="223" y="98" width="454" height="216" rx="10" fill="#245d43"/>
+  <path d="M274 262c57-72 111-108 169-107 62 1 116 41 183 114" fill="none" stroke="#b8d875" stroke-width="11" stroke-linecap="round"/>
+  <path d="M343 222c-15-46-4-84 31-116 31 42 22 82-31 116z" fill="#b8d875"/>
+  <path d="M490 212c3-53 30-89 81-106 7 58-20 93-81 106z" fill="#8bb16d"/>
+  <circle cx="598" cy="155" r="25" fill="#f2b65f"/>
+  <g transform="translate(140 340)">
+    <circle cx="52" cy="33" r="31" fill="#d86d44"/>
+    <path d="M13 132c6-64 83-76 102-13v49H13z" fill="#245d43"/>
+    <circle cx="229" cy="32" r="31" fill="#f2b65f"/>
+    <path d="M189 132c5-65 84-76 104-13v49H189z" fill="#5a956b"/>
+    <circle cx="606" cy="33" r="31" fill="#d86d44"/>
+    <path d="M567 132c6-64 83-76 102-13v49H567z" fill="#245d43"/>
+  </g>
+  <g transform="translate(626 332)">
+    <path d="M24 58h128l-14 61H39z" fill="#8e5a32"/>
+    <path d="M9 43h159v24H9z" fill="#d86d44"/>
+    <path d="M71 42c-13-34 4-63 41-80 8 42-7 68-41 80z" fill="#b8d875"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+# Archivos generados localmente
+output/
+tmp/
+
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+
