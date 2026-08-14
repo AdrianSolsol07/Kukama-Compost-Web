@@ -90,17 +90,63 @@ window.addEventListener('scroll', updateHeaderState, { passive: true });
 const year = document.getElementById('year');
 year.parentElement.textContent = `Todos los derechos reservados ©${new Date().getFullYear()} Kukama Compost - Iquitos - Perú.`;
 
+const emailJsConfig = Object.freeze({
+  serviceId: 'service_ntqjv7v',
+  templateId: 'template_bajnupk',
+  publicKey: 'RxhkAEVKHQx5i8pCh'
+});
 const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const message = event.currentTarget.querySelector('.form-message');
-  message.textContent = 'Formulario completado. El envío en línea estará disponible próximamente.';
-  event.currentTarget.reset();
-  const extraField = event.currentTarget.querySelector('.other-interest-field');
-  const extraInput = event.currentTarget.querySelector('#other-interest');
-  extraField.hidden = true;
-  extraInput.required = false;
-  extraInput.value = '';
+  const form = event.currentTarget;
+  const message = form.querySelector('.form-message');
+  const submitButton = form.querySelector('[type="submit"]');
+  const originalButtonContent = submitButton.innerHTML;
+  const formData = new FormData(form);
+
+  if (formData.get('sitio_web')) return;
+
+  submitButton.disabled = true;
+  submitButton.setAttribute('aria-busy', 'true');
+  submitButton.textContent = 'Enviando…';
+  message.textContent = 'Enviando tu mensaje…';
+
+  try {
+    const interestSelect = form.elements.interes;
+    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        service_id: emailJsConfig.serviceId,
+        template_id: emailJsConfig.templateId,
+        user_id: emailJsConfig.publicKey,
+        template_params: {
+          nombre: String(formData.get('nombre')).trim(),
+          correo: String(formData.get('correo')).trim(),
+          telefono: String(formData.get('telefono')).trim(),
+          interes: interestSelect.options[interestSelect.selectedIndex].text,
+          otro_interes: String(formData.get('otro_interes') || '').trim() || 'No proporcionada'
+        }
+      })
+    });
+
+    if (!response.ok) throw new Error(`EmailJS respondió con estado ${response.status}`);
+
+    message.textContent = '¡Gracias! Tu mensaje fue enviado correctamente.';
+    form.reset();
+    const extraField = form.querySelector('.other-interest-field');
+    const extraInput = form.querySelector('#other-interest');
+    extraField.hidden = true;
+    extraInput.required = false;
+    extraInput.value = '';
+  } catch (error) {
+    console.error('No se pudo enviar el formulario de contacto.', error);
+    message.textContent = 'No pudimos enviar tu mensaje. Revisa tu conexión e inténtalo nuevamente.';
+  } finally {
+    submitButton.disabled = false;
+    submitButton.removeAttribute('aria-busy');
+    submitButton.innerHTML = originalButtonContent;
+  }
 });
 
 const loginModal = document.getElementById('login-modal');
