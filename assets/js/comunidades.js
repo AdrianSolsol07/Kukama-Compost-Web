@@ -82,7 +82,7 @@ const openProfile = (index) => {
 
   detailPhoto.src = summaryPhoto.getAttribute('src');
   detailPhoto.alt = summaryPhoto.alt;
-  detailLabel.textContent = profile.label;
+  if (detailLabel) detailLabel.textContent = profile.label || '';
   detailName.textContent = card.querySelector('h3').textContent;
   detailCommunity.textContent = card.querySelector('.artisan-card-body p').textContent;
   detailBirth.textContent = button.dataset.birth;
