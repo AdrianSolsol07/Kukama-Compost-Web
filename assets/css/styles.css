@@ -101,3 +101,6 @@ footer{font-size:.9rem}
 .about-content{max-width:880px;display:flex;flex-direction:column;gap:1.35rem;margin:0 auto}
 .about-content p{font-size:1.02rem;line-height:1.8;color:#355347;margin:0}
 @media(max-width:900px){.intro{padding:4.5rem 8vw}.intro-block{margin-bottom:3rem;padding-bottom:2.5rem}}
+
+/* Subtítulos de sección (eyebrow) más destacados y legibles */
+.eyebrow{font-size:.9rem!important;letter-spacing:.14em!important;font-weight:700!important;margin-bottom:1.15rem!important}
