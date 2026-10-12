@@ -418,14 +418,34 @@ document.addEventListener('keydown', (event) => {
 const contactInterest = document.getElementById('contact-interest');
 const otherInterestField = document.querySelector('.other-interest-field');
 const otherInterest = document.getElementById('other-interest');
-if (contactInterest && otherInterestField && otherInterest) {
-  const toggleOtherInterest = () => {
-    const isOther = contactInterest.value === 'otro';
-    otherInterestField.hidden = !isOther;
-    otherInterest.required = isOther;
-    if (isOther) otherInterest.focus();
-    else otherInterest.value = '';
-  };
-  contactInterest.addEventListener('change', toggleOtherInterest);
-  toggleOtherInterest();
+if (contactInterest) {
+  const selectWrapper = contactInterest.closest('.select-wrapper');
+  if (selectWrapper) {
+    let isOpen = false;
+    contactInterest.addEventListener('click', () => {
+      isOpen = !isOpen;
+      selectWrapper.classList.toggle('is-open', isOpen);
+    });
+    contactInterest.addEventListener('change', () => {
+      isOpen = false;
+      selectWrapper.classList.remove('is-open');
+      contactInterest.blur();
+    });
+    contactInterest.addEventListener('blur', () => {
+      isOpen = false;
+      selectWrapper.classList.remove('is-open');
+    });
+  }
+
+  if (otherInterestField && otherInterest) {
+    const toggleOtherInterest = () => {
+      const isOther = contactInterest.value === 'otro';
+      otherInterestField.hidden = !isOther;
+      otherInterest.required = isOther;
+      if (isOther) otherInterest.focus();
+      else otherInterest.value = '';
+    };
+    contactInterest.addEventListener('change', toggleOtherInterest);
+    toggleOtherInterest();
+  }
 }

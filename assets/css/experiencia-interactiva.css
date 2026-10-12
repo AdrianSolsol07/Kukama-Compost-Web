@@ -26,7 +26,7 @@
 .area-list span{cursor:pointer;user-select:none;transition:transform .25s ease,background-color .25s ease,color .25s ease,box-shadow .25s ease}
 .area-list span.is-selected{background:var(--green);color:white;box-shadow:0 10px 20px #17392c25}
 .contact input,.contact select{min-height:50px;padding:.95rem 1.2rem!important;border-radius:999px!important;border-color:#8aa196!important;background:#fffdf8!important;transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease,background-color .22s ease}
-.contact select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38'%3E%3Ccircle cx='19' cy='19' r='16' fill='%23edf2db'/%3E%3Cpath d='M13 16l6 6 6-6' fill='none' stroke='%23245d43' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-position:calc(100% - 8px) 50%;background-size:38px 38px;background-repeat:no-repeat;padding-right:3.55rem!important}
+.contact select{appearance:none;-webkit-appearance:none;-moz-appearance:none;background-image:none!important;padding-right:3.55rem!important;cursor:pointer}
 .contact input:hover,.contact select:hover{border-color:var(--lime)!important;background:white!important}
 .contact input:focus,.contact select:focus{outline:0;border-color:var(--lime)!important;box-shadow:0 0 0 4px #b8d87566,0 12px 24px #061b141c;transform:translateY(-1px)}
 .button{position:relative;overflow:hidden}
