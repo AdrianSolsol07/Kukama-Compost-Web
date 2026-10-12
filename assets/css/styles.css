@@ -93,8 +93,9 @@ footer{font-size:.9rem}
 
 /* Estructura para Nuestro Propósito y Quiénes Somos */
 .intro{background:var(--cream);padding:6rem 13vw}
-.intro-block{margin-bottom:4.5rem;padding-bottom:4rem;border-bottom:1px solid #dce4dc}
-.intro-block h2{font-size:clamp(1.9rem,3.2vw,3rem);line-height:1.25;color:var(--ink);max-width:980px;margin:0}
+.intro-block{margin-bottom:4.5rem;padding-bottom:4rem;border-bottom:1px solid #dce4dc;text-align:center}
+.intro-block .eyebrow{margin-left:auto;margin-right:auto}
+.intro-block h2{font-size:clamp(1.9rem,3.2vw,3rem);line-height:1.25;color:var(--ink);max-width:980px;margin:0 auto}
 .about-block{display:flex;flex-direction:column}
 .about-grid{display:flex;flex-direction:column;gap:2.2rem}
 .lead-about{font-size:1.35rem;line-height:1.6;color:var(--green);font-weight:600;max-width:860px;margin:0}
