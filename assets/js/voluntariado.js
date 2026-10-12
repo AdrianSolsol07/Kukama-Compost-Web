@@ -1,7 +1,7 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 document.querySelectorAll('.brand').forEach((brand) => {
-  brand.innerHTML = '<img src="kc-logo.webp" alt="Kukama Compost" width="900" height="277" decoding="async" style="display:block;width:auto;height:56px;max-width:210px;object-fit:contain" />';
+  brand.innerHTML = '<img src="assets/images/kc-logo.webp" alt="Kukama Compost" width="900" height="277" decoding="async" style="display:block;width:auto;height:56px;max-width:210px;object-fit:contain" />';
 });
 
 document.querySelectorAll('.back-link').forEach((link) => {
@@ -317,7 +317,7 @@ function renderCommitmentLetter() {
   letter.innerHTML = `
     <div class="letter-actions"><p>Revisa tu carta antes de descargarla.</p><div><button class="button button-primary" type="button" id="download-letter">Descargar PDF <span>↓</span></button><button class="letter-close" type="button" id="close-letter" aria-label="Cerrar vista previa">×</button></div></div>
     <article class="letter-sheet">
-      <header class="letter-heading"><img src="kc-logo.webp" alt="Kukama Compost" width="900" height="277"><div><strong>Carta de compromiso</strong><span>Kukama Compost · Iquitos, Perú</span></div></header>
+      <header class="letter-heading"><img src="assets/images/kc-logo.webp" alt="Kukama Compost" width="900" height="277"><div><strong>Carta de compromiso</strong><span>Kukama Compost · Iquitos, Perú</span></div></header>
       <div class="letter-title"><p>Voluntariado con propósito</p><h2>Carta de compromiso de voluntariado</h2><span>Ley N.° 28238 - Ley General del Voluntariado del Perú</span></div>
       <p class="letter-date">Iquitos, ${today}</p>
       <p>Yo, <strong>${escapeHtml(answers.nombre || '________________________')}</strong>, identificado/a con DNI o documento N.° <strong>${escapeHtml(answers.documento || '____________')}</strong>, teléfono <strong>${escapeHtml(answers.telefono || '____________')}</strong> y correo electrónico <strong>${escapeHtml(answers.correo || '________________________')}</strong>, manifiesto libremente mi voluntad de participar como voluntario/a en Kukama Compost.</p>

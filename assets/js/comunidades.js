@@ -3,27 +3,27 @@ const profileContent = [
     label: 'Manos que crean · 01',
     story: '“Aquí irá su experiencia, su historia y el motivo que inspira su trabajo.”',
     works: [
-      ['comercio-con-sentido.webp', 'Trabajo de la primera persona'],
-      ['taller-1.webp', 'Artesanía de la primera persona'],
-      ['taller-2.webp', 'Creación de la primera persona']
+      ['assets/images/comercio-con-sentido.webp', 'Trabajo de la primera persona'],
+      ['assets/images/taller-1.webp', 'Artesanía de la primera persona'],
+      ['assets/images/taller-2.webp', 'Creación de la primera persona']
     ]
   },
   {
     label: 'Manos que crean · 02',
     story: '“Aquí irá una segunda experiencia sobre sus saberes, aprendizajes y trabajo en la comunidad.”',
     works: [
-      ['taller-2.webp', 'Trabajo de la segunda persona'],
-      ['taller-3.webp', 'Artesanía de la segunda persona'],
-      ['comercio-con-sentido.webp', 'Creación de la segunda persona']
+      ['assets/images/taller-2.webp', 'Trabajo de la segunda persona'],
+      ['assets/images/taller-3.webp', 'Artesanía de la segunda persona'],
+      ['assets/images/comercio-con-sentido.webp', 'Creación de la segunda persona']
     ]
   },
   {
     label: 'Manos que crean · 03',
     story: '“Aquí irá una tercera historia acerca de su oficio, su inspiración y la importancia de compartirlo.”',
     works: [
-      ['taller-4.webp', 'Trabajo de la tercera persona'],
-      ['comercio-con-sentido.webp', 'Artesanía de la tercera persona'],
-      ['taller-1.webp', 'Creación de la tercera persona']
+      ['assets/images/taller-4.webp', 'Trabajo de la tercera persona'],
+      ['assets/images/comercio-con-sentido.webp', 'Artesanía de la tercera persona'],
+      ['assets/images/taller-1.webp', 'Creación de la tercera persona']
     ]
   }
 ];

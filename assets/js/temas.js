@@ -1,9 +1,12 @@
-﻿const progress = document.createElement('div');
+const progress = document.createElement('div');
 progress.className = 'scroll-progress';
 const optimizedTopicImages = {
-  'compostaje.jpg': 'compostaje.webp',
-  'educacion-ambiental.jpg': 'educacion-ambiental.webp',
-  'comercio-con-sentido.jpg': 'comercio-con-sentido.webp'
+  'assets/images/compostaje.jpg': 'assets/images/compostaje.webp',
+  'assets/images/educacion-ambiental.jpg': 'assets/images/educacion-ambiental.webp',
+  'assets/images/comercio-con-sentido.jpg': 'assets/images/comercio-con-sentido.webp',
+  'compostaje.jpg': 'assets/images/compostaje.webp',
+  'educacion-ambiental.jpg': 'assets/images/educacion-ambiental.webp',
+  'comercio-con-sentido.jpg': 'assets/images/comercio-con-sentido.webp'
 };
 const topicHeroImage = document.querySelector('.topic-hero .hero-image');
 if (topicHeroImage) {
@@ -13,12 +16,12 @@ if (topicHeroImage) {
   topicHeroImage.fetchPriority = 'high';
 }
 document.querySelectorAll('.brand img').forEach((logo) => {
-  logo.src = 'kc-logo.webp';
+  logo.src = 'assets/images/kc-logo.webp';
   logo.width = 900;
   logo.height = 277;
 });
 const sharedFooterScript = document.createElement('script');
-sharedFooterScript.src = 'footer-global.js';
+sharedFooterScript.src = 'assets/js/footer-global.js';
 document.body.appendChild(sharedFooterScript);
 document.body.prepend(progress);
 

@@ -24,7 +24,7 @@ if (artisanLink) {
 }
 
 document.querySelectorAll('.brand').forEach((brand) => {
-  brand.innerHTML = '<img src="kc-logo.webp" alt="Kukama Compost" width="900" height="277" decoding="async" style="display:block;width:auto;height:56px;max-width:210px;object-fit:contain" />';
+  brand.innerHTML = '<img src="assets/images/kc-logo.webp" alt="Kukama Compost" width="900" height="277" decoding="async" style="display:block;width:auto;height:56px;max-width:210px;object-fit:contain" />';
 });
 
 document.querySelectorAll('.brand').forEach((brand) => {

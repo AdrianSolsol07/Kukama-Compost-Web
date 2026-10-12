@@ -42,18 +42,18 @@
 
 /* Iconos sociales proporcionados, con el mismo efecto interactivo. */
 .social-links a{background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:100% 100%;border:0;overflow:hidden;transition:transform .2s ease,filter .2s ease,box-shadow .2s ease}
-.social-links a[aria-label="Facebook"]{background-image:url("icono-facebook.svg")}
-.social-links a[aria-label="Instagram"]{background-image:url("icono-instagram.svg")}
-.social-links a[aria-label="WhatsApp"]{background-image:url("icono-whatsapp.svg")}
+.social-links a[aria-label="Facebook"]{background-image:url("../images/icono-facebook.svg")}
+.social-links a[aria-label="Instagram"]{background-image:url("../images/icono-instagram.svg")}
+.social-links a[aria-label="WhatsApp"]{background-image:url("../images/icono-whatsapp.svg")}
 .social-links a svg{display:none}
 .social-links a:hover{background-color:transparent;transform:translateY(-3px) scale(1.06);filter:invert(28%) sepia(23%) saturate(1055%) hue-rotate(101deg) brightness(88%);box-shadow:0 8px 16px #17392c33}
 
 /* Estado inverso: círculo blanco e ícono verde; al hover, círculo verde e ícono blanco. */
 .social-links a{position:relative;background-image:none!important;background-color:var(--green);filter:none}
 .social-links a::before{content:"";position:absolute;inset:0;background-repeat:no-repeat;background-position:center;background-size:100% 100%;filter:invert(1);transition:filter .2s ease}
-.social-links a[aria-label="Facebook"]::before{background-image:url("icono-facebook.svg")}
-.social-links a[aria-label="Instagram"]::before{background-image:url("icono-instagram.svg")}
-.social-links a[aria-label="WhatsApp"]::before{background-image:url("icono-whatsapp.svg")}
+.social-links a[aria-label="Facebook"]::before{background-image:url("../images/icono-facebook.svg")}
+.social-links a[aria-label="Instagram"]::before{background-image:url("../images/icono-instagram.svg")}
+.social-links a[aria-label="WhatsApp"]::before{background-image:url("../images/icono-whatsapp.svg")}
 .social-links a:hover{background-color:#fff;filter:none}
 .social-links a:hover::before{filter:invert(28%) sepia(23%) saturate(1055%) hue-rotate(101deg) brightness(88%)}
 
@@ -71,7 +71,7 @@ footer{font-size:.9rem}
 .hero .button-text{color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:.9rem 1.25rem;backdrop-filter:blur(4px);transition:background-color .25s ease,border-color .25s ease}
 .hero .button-text:hover{color:var(--ink);background:rgba(184,216,117,.14);border-color:rgba(184,216,117,.55)}
 @media(min-width:801px){.hero-copy{grid-template-areas:"eyebrow eyebrow" "title title" "lead lead" "actions actions" "impact impact"}.hero-copy>.actions{flex-direction:row;align-items:center;justify-content:flex-start;margin:0}}
-.site-header{background-color:#fff!important;background-image:url("fondo-encabezado.svg")!important;background-repeat:repeat-x!important;background-position:center!important;background-size:auto 100%!important}
+.site-header{background-color:#fff!important;background-image:url("../images/fondo-encabezado.svg")!important;background-repeat:repeat-x!important;background-position:center!important;background-size:auto 100%!important}
 /* Refuerza el contraste del mensaje principal sin ocultar la fotografía. */
 .hero-art::after{background:linear-gradient(90deg,rgba(15,43,33,.88) 0%,rgba(15,43,33,.7) 40%,rgba(15,43,33,.2) 72%,transparent 100%),linear-gradient(0deg,rgba(15,43,33,.88) 0%,rgba(23,57,44,.5) 45%,transparent 80%)}
 .hero h1{text-shadow:0 3px 16px rgba(7,25,18,.42)}
