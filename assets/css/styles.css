@@ -99,6 +99,5 @@ footer{font-size:.9rem}
 .about-block{display:flex;flex-direction:column;align-items:center;text-align:center}
 .about-block .eyebrow{margin-left:auto;margin-right:auto}
 .about-content{max-width:880px;display:flex;flex-direction:column;gap:1.35rem;margin:0 auto}
-.about-highlight{font-size:1.15rem;line-height:1.7;color:var(--green);font-weight:600;margin:0}
-.about-content p:not(.about-highlight){font-size:1.02rem;line-height:1.8;color:#355347;margin:0}
+.about-content p{font-size:1.02rem;line-height:1.8;color:#355347;margin:0}
 @media(max-width:900px){.intro{padding:4.5rem 8vw}.intro-block{margin-bottom:3rem;padding-bottom:2.5rem}}
