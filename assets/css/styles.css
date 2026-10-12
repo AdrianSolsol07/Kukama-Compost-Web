@@ -111,4 +111,4 @@ footer{font-size:.9rem}
 .select-arrow{position:absolute;right:10px;top:50%;width:34px;height:34px;border-radius:50%;background:#edf2db;color:var(--green);display:grid;place-items:center;pointer-events:none;transform:translateY(-50%) rotate(0deg);transition:transform .34s cubic-bezier(.34,1.56,.64,1),background-color .22s ease,color .22s ease,box-shadow .22s ease;z-index:2}
 .select-arrow svg{width:16px;height:16px;display:block}
 .select-wrapper:hover .select-arrow{background:var(--lime);color:var(--ink);transform:translateY(calc(-50% + 2px)) rotate(0deg)}
-.select-wrapper:focus-within .select-arrow,.select-wrapper.is-open .select-arrow,.select-wrapper:focus-within:hover .select-arrow,.select-wrapper.is-open:hover .select-arrow{transform:translateY(-50%) rotate(180deg);background:var(--lime);color:var(--ink);box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.select-wrapper.is-open .select-arrow,.select-wrapper.is-open:hover .select-arrow{transform:translateY(-50%) rotate(180deg);background:var(--lime);color:var(--ink);box-shadow:0 4px 12px rgba(0,0,0,.18)}

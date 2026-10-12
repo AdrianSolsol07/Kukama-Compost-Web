@@ -422,18 +422,42 @@ if (contactInterest) {
   const selectWrapper = contactInterest.closest('.select-wrapper');
   if (selectWrapper) {
     let isOpen = false;
+    let justSelected = false;
+
+    const closeDropdown = () => {
+      isOpen = false;
+      selectWrapper.classList.remove('is-open');
+    };
+
     contactInterest.addEventListener('click', () => {
+      if (justSelected) return;
       isOpen = !isOpen;
       selectWrapper.classList.toggle('is-open', isOpen);
     });
+
     contactInterest.addEventListener('change', () => {
-      isOpen = false;
-      selectWrapper.classList.remove('is-open');
-      contactInterest.blur();
+      justSelected = true;
+      closeDropdown();
+      setTimeout(() => {
+        justSelected = false;
+        closeDropdown();
+      }, 250);
     });
+
     contactInterest.addEventListener('blur', () => {
-      isOpen = false;
-      selectWrapper.classList.remove('is-open');
+      closeDropdown();
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!selectWrapper.contains(event.target)) {
+        closeDropdown();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' || event.key === 'Tab') {
+        closeDropdown();
+      }
     });
   }
 
